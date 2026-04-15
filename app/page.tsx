@@ -10,7 +10,7 @@ export default function Home() {
             AI-Powered
           </span>
           <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-            AI Product Validator
+            Product Validator
           </h1>
           <p className="max-w-md text-pretty text-base text-muted-foreground sm:text-lg">
             Turn raw ideas into structured MVP plans — in seconds.
@@ -19,7 +19,7 @@ export default function Home() {
             Built as a rapid MVP to validate product ideas in minutes
           </p>
           <p className="mt-1 max-w-sm rounded-lg border border-amber-200 bg-amber-50 px-4 py-2.5 text-xs leading-relaxed text-amber-700">
-            This app uses a <strong>free-tier AI API</strong> for demonstration
+            This app uses a <strong> free-tier AI API </strong> for demonstration
             purposes only. Responses may be slow or occasionally fail &mdash; if
             that happens, please wait a few minutes and try again.
           </p>

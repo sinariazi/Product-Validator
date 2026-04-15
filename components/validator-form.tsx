@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Spinner } from "@/components/ui/spinner";
 import { ResultsGrid, type AnalysisResult } from "@/components/results-grid";
+import { AnalyzingLoader } from "@/components/analyzing-loader";
 
 const MAX_CHARS = 1000;
 
@@ -140,6 +141,13 @@ export function ValidatorForm() {
           )}
         </div>
       </form>
+
+      {/* Loading animation */}
+      {loading && (
+        <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+          <AnalyzingLoader />
+        </div>
+      )}
 
       {/* Error State */}
       {error && (

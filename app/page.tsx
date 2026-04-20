@@ -60,7 +60,7 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-10 flex flex-col items-center gap-1 text-center text-xs text-muted-foreground">
+        <footer className="mt-10 flex flex-col items-center gap-3 text-center text-xs text-muted-foreground">
           <span>
             Powered by{" "}
             <a
@@ -72,6 +72,26 @@ export default function Home() {
               Mehr Kraft Digital
             </a>
           </span>
+
+          {/* Legal links */}
+          <nav aria-label="Legal links" className="flex flex-wrap justify-center gap-x-4 gap-y-1">
+            {[
+              { label: "Imprint", href: "https://mehrkraftdigital.com/imprint" },
+              { label: "Privacy Policy", href: "https://mehrkraftdigital.com/privacy" },
+              { label: "Terms & Conditions", href: "https://mehrkraftdigital.com/terms" },
+            ].map(({ label, href }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline-offset-2 hover:text-foreground hover:underline transition-colors"
+              >
+                {label}
+              </a>
+            ))}
+          </nav>
+
           <span className="text-muted-foreground/50">
             &copy; {new Date().getFullYear()} Mehr Kraft Digital Riazi e.U. All rights reserved.
           </span>

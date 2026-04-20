@@ -4,39 +4,46 @@ import { Lightbulb, BarChart2, ShieldCheck } from "lucide-react";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background font-sans">
-      {/* Top announcement bar */}
-      <div className="border-b border-border/60 bg-primary/10 py-2 text-center text-xs font-medium text-primary">
-        Free-tier AI &mdash; for demonstration purposes only. Responses may occasionally be slow.
-      </div>
 
-      <main className="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:py-20">
+      {/* Top accent bar */}
+      <div className="h-1 w-full bg-primary" />
+
+      <main className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:py-16">
 
         {/* Hero */}
-        <div className="mb-12 flex flex-col items-center gap-4 text-center">
-          <span className="inline-block rounded-full border border-primary/30 bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-primary">
+        <div className="mb-10 flex flex-col items-center gap-5 text-center">
+
+          {/* Label pill */}
+          <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/8 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
+            <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
             AI-Powered Validation
           </span>
 
-          <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-            Product Validator
-          </h1>
+          {/* Headline */}
+          <div className="flex flex-col items-center gap-2">
+            <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+              Validate Your
+              <span className="relative ml-3 text-primary">
+                Business Idea
+              </span>
+            </h1>
+            <p className="max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Describe your concept in plain language. Our AI delivers a structured,
+              multi-dimensional analysis — problem fit, target market, MVP scope,
+              core features, risks, and a clear go/no-go recommendation.
+            </p>
+          </div>
 
-          <p className="max-w-lg text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Describe your idea in plain language and our AI performs a structured,
-            multi-dimensional analysis — problem fit, target users, MVP scope,
-            core features, risks, and a clear recommendation.
-          </p>
-
-          {/* Three value pills */}
-          <div className="mt-2 flex flex-wrap justify-center gap-3">
+          {/* Value pills */}
+          <div className="flex flex-wrap justify-center gap-2.5">
             {[
               { icon: Lightbulb, label: "Idea Clarity" },
-              { icon: BarChart2, label: "Market Fit Assessment" },
+              { icon: BarChart2, label: "Market Fit" },
               { icon: ShieldCheck, label: "Risk Analysis" },
             ].map(({ icon: Icon, label }) => (
               <span
                 key={label}
-                className="inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary px-3 py-1.5 text-xs font-medium text-muted-foreground"
+                className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1.5 text-xs font-medium text-muted-foreground shadow-sm"
               >
                 <Icon className="h-3.5 w-3.5 text-primary" aria-hidden="true" />
                 {label}
@@ -44,17 +51,18 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Disclaimer */}
-          <p className="mt-2 max-w-md rounded-xl border border-border bg-secondary/60 px-4 py-3 text-xs leading-relaxed text-muted-foreground">
-            Please provide a high-level description of your business concept.
-            Avoid sharing sensitive, proprietary, or personal information — a general
-            overview is sufficient for an accurate assessment. If a response fails,
-            wait a moment and try again.
-          </p>
+          {/* Free-tier notice */}
+          <div className="flex items-start gap-2.5 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-left max-w-md">
+            <span className="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-amber-400 mt-1" aria-hidden="true" />
+            <p className="text-xs leading-relaxed text-amber-800">
+              This tool uses a <strong>free-tier AI API</strong> for demonstration purposes.
+              Responses may occasionally be slow or fail — if so, wait a moment and try again.
+            </p>
+          </div>
         </div>
 
-        {/* Main card */}
-        <div className="rounded-2xl border border-border bg-card shadow-lg shadow-primary/5 p-6 sm:p-8">
+        {/* Form card */}
+        <div className="rounded-2xl border border-border bg-card shadow-md shadow-primary/5 p-6 sm:p-8">
           <ValidatorForm />
         </div>
 
@@ -63,19 +71,10 @@ export default function Home() {
           <span>
             Powered by{" "}
             <a
-              href="https://openrouter.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary underline-offset-2 hover:underline"
-            >
-              OpenRouter
-            </a>
-            {" "}&middot; Built by{" "}
-            <a
               href="https://mehrkraftdigital.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary underline-offset-2 hover:underline"
+              className="font-medium text-primary underline-offset-2 hover:underline"
             >
               Mehr Kraft Digital
             </a>

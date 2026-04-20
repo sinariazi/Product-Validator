@@ -29,43 +29,43 @@ const SECTIONS: {
     key: "problem",
     title: "Problem & Opportunity",
     Icon: Search,
-    iconColor: "text-blue-400",
-    accent: "bg-blue-500/8 border-blue-500/20",
+    iconColor: "text-blue-600",
+    accent: "bg-blue-50 border-blue-200",
   },
   {
     key: "users",
     title: "Target Users",
     Icon: Users,
-    iconColor: "text-indigo-400",
-    accent: "bg-indigo-500/8 border-indigo-500/20",
+    iconColor: "text-violet-600",
+    accent: "bg-violet-50 border-violet-200",
   },
   {
     key: "mvp",
     title: "MVP Scope",
     Icon: Rocket,
-    iconColor: "text-emerald-400",
-    accent: "bg-emerald-500/8 border-emerald-500/20",
+    iconColor: "text-emerald-600",
+    accent: "bg-emerald-50 border-emerald-200",
   },
   {
     key: "features",
     title: "Key Features",
     Icon: Zap,
-    iconColor: "text-amber-400",
-    accent: "bg-amber-500/8 border-amber-500/20",
+    iconColor: "text-amber-600",
+    accent: "bg-amber-50 border-amber-200",
   },
   {
     key: "risks",
     title: "Risks & Challenges",
     Icon: AlertTriangle,
-    iconColor: "text-rose-400",
-    accent: "bg-rose-500/8 border-rose-500/20",
+    iconColor: "text-rose-600",
+    accent: "bg-rose-50 border-rose-200",
   },
   {
     key: "recommendation",
     title: "Recommendation",
     Icon: ThumbsUp,
     iconColor: "text-primary",
-    accent: "bg-primary/8 border-primary/25",
+    accent: "bg-primary/6 border-primary/20",
   },
 ];
 
@@ -82,7 +82,7 @@ export function ResultsGrid({ result }: ResultsGridProps) {
           className={`border shadow-sm transition-shadow hover:shadow-md ${accent}`}
         >
           <CardHeader className="pb-2">
-            <CardTitle className="flex items-center gap-2 text-sm font-semibold text-card-foreground">
+            <CardTitle className="flex items-center gap-2 text-sm font-semibold text-foreground">
               <Icon className={`h-4 w-4 shrink-0 ${iconColor}`} aria-hidden="true" />
               {title}
             </CardTitle>

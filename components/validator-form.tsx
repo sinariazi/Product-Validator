@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Spinner } from "@/components/ui/spinner";
 import { ResultsGrid, type AnalysisResult } from "@/components/results-grid";
 import { AnalyzingLoader } from "@/components/analyzing-loader";
+import { GrantCTABanner } from "@/components/grant-cta-banner";
 
 const MAX_CHARS = 1000;
 
@@ -158,7 +159,7 @@ export function ValidatorForm() {
 
       {/* Results */}
       {result && !loading && (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-6">
           <div className="flex items-center gap-3">
             <div className="h-px flex-1 bg-border" />
             <span className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
@@ -167,6 +168,18 @@ export function ValidatorForm() {
             <div className="h-px flex-1 bg-border" />
           </div>
           <ResultsGrid result={result} />
+
+          {/* Grant CTA */}
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center gap-3">
+              <div className="h-px flex-1 bg-border" />
+              <span className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                Ready to take it further?
+              </span>
+              <div className="h-px flex-1 bg-border" />
+            </div>
+            <GrantCTABanner />
+          </div>
         </div>
       )}
     </div>

@@ -103,7 +103,7 @@ export function CookieConsent() {
             We use cookies to ensure the basic functionality of our website and to improve your experience. You may choose which categories to allow below. Your preference is stored locally for{" "}
             <span className="font-medium text-foreground">30 days</span>.{" "}
             <a
-              href="https://mehrkraftdigital.com/privacy-policy"
+              href="https://mehrkraftdigital.com/privacy"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-primary underline-offset-2 hover:underline"
@@ -163,9 +163,8 @@ export function CookieConsent() {
                   role="switch"
                   aria-checked={analytics}
                   onClick={() => setAnalytics((v) => !v)}
-                  className={`mt-0.5 h-5 w-9 rounded-full transition-colors flex items-center px-0.5 ${
-                    analytics ? "bg-primary justify-end" : "bg-border justify-start"
-                  }`}
+                  className={`mt-0.5 h-5 w-9 rounded-full transition-colors flex items-center px-0.5 ${analytics ? "bg-primary justify-end" : "bg-border justify-start"
+                    }`}
                 >
                   <div className="h-4 w-4 rounded-full bg-white shadow" />
                 </button>
@@ -186,9 +185,8 @@ export function CookieConsent() {
                   role="switch"
                   aria-checked={marketing}
                   onClick={() => setMarketing((v) => !v)}
-                  className={`mt-0.5 h-5 w-9 rounded-full transition-colors flex items-center px-0.5 ${
-                    marketing ? "bg-primary justify-end" : "bg-border justify-start"
-                  }`}
+                  className={`mt-0.5 h-5 w-9 rounded-full transition-colors flex items-center px-0.5 ${marketing ? "bg-primary justify-end" : "bg-border justify-start"
+                    }`}
                 >
                   <div className="h-4 w-4 rounded-full bg-white shadow" />
                 </button>

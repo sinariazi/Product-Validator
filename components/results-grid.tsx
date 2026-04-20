@@ -29,43 +29,43 @@ const SECTIONS: {
     key: "problem",
     title: "Problem & Opportunity",
     Icon: Search,
-    iconColor: "text-blue-500",
-    accent: "bg-blue-50/60 border-blue-100",
+    iconColor: "text-blue-400",
+    accent: "bg-blue-500/8 border-blue-500/20",
   },
   {
     key: "users",
     title: "Target Users",
     Icon: Users,
-    iconColor: "text-indigo-500",
-    accent: "bg-indigo-50/60 border-indigo-100",
+    iconColor: "text-indigo-400",
+    accent: "bg-indigo-500/8 border-indigo-500/20",
   },
   {
     key: "mvp",
     title: "MVP Scope",
     Icon: Rocket,
-    iconColor: "text-emerald-500",
-    accent: "bg-emerald-50/60 border-emerald-100",
+    iconColor: "text-emerald-400",
+    accent: "bg-emerald-500/8 border-emerald-500/20",
   },
   {
     key: "features",
     title: "Key Features",
     Icon: Zap,
-    iconColor: "text-amber-500",
-    accent: "bg-amber-50/60 border-amber-100",
+    iconColor: "text-amber-400",
+    accent: "bg-amber-500/8 border-amber-500/20",
   },
   {
     key: "risks",
-    title: "Risks",
+    title: "Risks & Challenges",
     Icon: AlertTriangle,
-    iconColor: "text-rose-500",
-    accent: "bg-rose-50/60 border-rose-100",
+    iconColor: "text-rose-400",
+    accent: "bg-rose-500/8 border-rose-500/20",
   },
   {
     key: "recommendation",
     title: "Recommendation",
     Icon: ThumbsUp,
     iconColor: "text-primary",
-    accent: "bg-primary/5 border-primary/15",
+    accent: "bg-primary/8 border-primary/25",
   },
 ];
 
@@ -82,7 +82,7 @@ export function ResultsGrid({ result }: ResultsGridProps) {
           className={`border shadow-sm transition-shadow hover:shadow-md ${accent}`}
         >
           <CardHeader className="pb-2">
-            <CardTitle className="flex items-center gap-2 text-sm font-semibold text-foreground">
+            <CardTitle className="flex items-center gap-2 text-sm font-semibold text-card-foreground">
               <Icon className={`h-4 w-4 shrink-0 ${iconColor}`} aria-hidden="true" />
               {title}
             </CardTitle>

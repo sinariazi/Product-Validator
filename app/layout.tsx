@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'AI Product Validator',
-  description: 'Turn raw ideas into structured MVP plans using AI',
+  title: 'Product Validator — Mehr Kraft Digital',
+  description: 'AI-powered product validation. Describe your idea and receive a structured analysis covering problem fit, target users, MVP scope, key features, risks, and a clear recommendation.',
   generator: 'v0.app',
   icons: {
     icon: [

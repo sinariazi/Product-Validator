@@ -66,7 +66,7 @@ export function ValidatorForm() {
                   "Build an AI-powered study planner for parents to track and optimize their children's learning progress"
                 )
               }
-              className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-secondary px-3 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-foreground disabled:opacity-50"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-secondary px-3 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:border-primary/40 hover:bg-accent hover:text-foreground disabled:opacity-50"
             >
               <span className="text-primary">&#9654;</span>
               Try example: AI study planner for parents
@@ -81,7 +81,7 @@ export function ValidatorForm() {
               rows={6}
               maxLength={MAX_CHARS + 100}
               disabled={loading}
-              className="w-full resize-none rounded-xl border border-border bg-card px-4 py-3 text-sm text-foreground shadow-sm placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 disabled:opacity-60 transition-colors"
+              className="w-full resize-none rounded-xl border border-border bg-input px-4 py-3 text-sm text-foreground shadow-sm placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/25 disabled:opacity-60 transition-colors"
             />
           </div>
           <div className="flex items-center justify-between px-1">

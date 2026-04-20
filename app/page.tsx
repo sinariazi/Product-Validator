@@ -18,10 +18,10 @@ export default function Home() {
           <p className="text-xs text-muted-foreground/70">
             Built as a rapid MVP to validate product ideas in minutes
           </p>
-          <p className="mt-1 max-w-sm rounded-lg border border-amber-200 bg-amber-50 px-4 py-2.5 text-xs leading-relaxed text-amber-700">
-            This app uses a <strong> free-tier AI API </strong> for demonstration
-            purposes only. Responses may be slow or occasionally fail &mdash; if
-            that happens, please wait a few minutes and try again.
+          <p className="mt-1 max-w-sm rounded-lg border border-blue-200 bg-amber-50 px-4 py-2.5 text-xs leading-relaxed text-black-700">
+            Explain your business idea at a high level so we can evaluate it using our advanced data models. Our AI system performs multiple analytical steps to ensure accurate results, so the evaluation may take a short amount of time to complete.
+
+            Please avoid sharing sensitive or confidential information (e.g., proprietary algorithms, financial details, or personal data). A general description is sufficient for an accurate assessment.
           </p>
         </div>
 

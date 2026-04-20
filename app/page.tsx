@@ -51,14 +51,7 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Free-tier notice */}
-          <div className="flex items-start gap-2.5 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-left max-w-md">
-            <span className="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-amber-400 mt-1" aria-hidden="true" />
-            <p className="text-xs leading-relaxed text-amber-800">
-              This tool uses a <strong>free-tier AI API</strong> for demonstration purposes.
-              Responses may occasionally be slow or fail — if so, wait a moment and try again.
-            </p>
-          </div>
+
         </div>
 
         {/* Form card */}
